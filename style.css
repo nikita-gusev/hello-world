@@ -1,0 +1,103 @@
+/*Основные настройки: отступы, шрифт */
+header{
+	margin-top=200px;
+	font-family: 'Chilanka', cursive;
+}
+/*Те же настройки текста */
+.line{
+	margin:0;
+	padding:0;	
+}
+/*Работа с свойствами ul и ol */
+.line ul{
+	list-style:none;
+}
+/*Основные данные со всеми важными хар-ками, относяшиеся к списку (ul) */
+.line > ul{
+	display:flex;
+	justify-content:center;
+}
+/*Всё, что касается букв и закрашивания самого меню, а не иконок К ИКОНКАМ НЕ ОТНОСИТСЯ */
+.line > ul li a{
+	display:block;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73b1e7+2,73b1e7+2,0a77d5+31,539fe1+98,539fe1+98,87bcea+100 */
+background: rgb(115,177,231); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(115,177,231,1) 2%, rgba(115,177,231,1) 2%, rgba(10,119,213,1) 31%, rgba(83,159,225,1) 98%, rgba(83,159,225,1) 98%, rgba(135,188,234,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(115,177,231,1) 2%,rgba(115,177,231,1) 2%,rgba(10,119,213,1) 31%,rgba(83,159,225,1) 98%,rgba(83,159,225,1) 98%,rgba(135,188,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(115,177,231,1) 2%,rgba(115,177,231,1) 2%,rgba(10,119,213,1) 31%,rgba(83,159,225,1) 98%,rgba(83,159,225,1) 98%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73b1e7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+	padding: 15px 30px 15px 40px;
+	font-size: 17px;
+	color:white;
+	text-transform:uppercase;
+	text-decoration: none;
+	/*Исчезание анимации*/
+	transition: all 2.0s ease;
+}
+.line > ul li{
+	position:relative;
+	border-right: 1px solid #6e6e73;
+}
+.line > ul li > a i.fas{
+	position:absolute;
+	top:15px;
+	left:12px;
+	font-size:18px;
+}
+/*Размер иконок*/
+#i1{
+	font-size: 18px;
+}
+#i2{
+	font-size: 16px;
+}
+#i3{
+	font-size: 19px;
+}
+#i4{
+	font-size: 20px;
+	text-align: right;
+}
+/*Линии на сайте (левая, правая) */
+.line > ul li:first-child{
+	border-left: 1px solid #6e6e73;
+}
+.line > ul li:last-child{
+	border-right: 1px solid #6e6e73;
+}
+/*Выделение при наведении на кнопку*/
+.line li a:hover{
+	background:#b88b2c;
+	color:#f00e0e;
+	/*Тень*/
+	box-shadow: 2px 5px 10px -5px black;
+	/*Время анимации*/
+	transition: all 1.0s ease;
+}
+/*Всплывающие данные в "menu"*/
+.line li ul{
+	position: absolute;
+	min-width:150px;
+	display:none;
+}
+.line li > ul li{
+	border:1px solid #6e6e73;
+}
+.line li > ul li a{
+	padding:10px;
+	text-transform:none;
+}
+.line li > ul li ul{
+	position:absolute;
+	right:-150px;
+	top:0;
+}
+.line li:hover > ul{
+	display:block;
+}
+#i3{
+	margin: 2px;
+}
+#i4{
+	margin:2px;
+}
